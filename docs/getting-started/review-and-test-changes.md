@@ -7,7 +7,7 @@ Since documentation can contain snippets and markdown from [Material for MkDocs]
   ```dockerfile
     FROM registry.access.redhat.com/ubi9/python-312
     RUN pip3 install mkdocs mkdocs-material mkdocs-macros-plugin mkdocs mkdocs-mermaid2-plugin
-    ENTRYPOINT mkdocs serve -a 0.0.0.0:8000
+    ENTRYPOINT mkdocs serve -a 0.0.0.0:8000 --livereload
   ```
 </details>
 
