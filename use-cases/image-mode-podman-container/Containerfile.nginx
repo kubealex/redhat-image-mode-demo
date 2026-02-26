@@ -1,0 +1,6 @@
+FROM registry.access.redhat.com/ubi10/ubi-minimal
+
+RUN microdnf install -y nginx
+COPY index.html /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]

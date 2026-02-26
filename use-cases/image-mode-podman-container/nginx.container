@@ -1,0 +1,10 @@
+[Container]
+Image=quay.io/QUAY_USER/nginx-lbi:v1.0
+GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
+PublishPort=8080:80
+[Unit]
+Description=Custom NGINX server
+[Install]
+WantedBy=default.target
+[Service]
+Restart=always
